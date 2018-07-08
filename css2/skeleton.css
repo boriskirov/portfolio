@@ -426,6 +426,20 @@ body {
   background: #f9f9f9;
 
 }
+@keyframes infinite-spinning {
+      from{
+        transform: translateY(10px) scale(0.99);
+        opacity: 0;
+      }
+     to {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+.container {
+  animation: infinite-spinning .7s ease forwards;
+}
 
 .bg-cacti{
 
@@ -577,6 +591,6 @@ h4 {
 }
 
 .footer {
-  margin-top: 20%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
