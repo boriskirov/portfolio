@@ -569,7 +569,6 @@ h4 {
 
 .contact-text{
   font-size: 6rem;
-  font-weight: bold;
 
 }
 
@@ -585,9 +584,9 @@ h4 {
 }
 }
 
-
 .footer-links {
   color: #8abf3b;
+  font-weight: 900;
 }
 
 .footer {
