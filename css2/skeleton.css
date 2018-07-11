@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 9600px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -510,8 +510,28 @@ h1 {
 
 @media (max-width: 320px) {
 .header h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  margin-top: 15%;
 }
+}
+
+@media (max-width: 550px) {
+  .hvr-buzz {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hvr-buzz {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-size: 2.5rem;
+
+  }
 }
 
 .project-container {
@@ -519,11 +539,61 @@ h1 {
   padding-bottom: 5rem;
   min-height: 100px;
   height: 100%;
-  border-bottom: 2px solid #89bf40;
+  border-bottom: 1px solid #89bf40;
 }
+
+/*--Button style--!*/
+.button {
+  background-color: #89bf40;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  width: 250px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+  cursor: pointer;
+  line-height: 0px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  margin-right: 0px;
+  padding-top: 5px;
+}
+
+.button span:after {
+  content: 'PDF';
+  font-size: 1rem;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2rem;
+  transition: 0.4s;
+}
+
+.button:hover span {
+  padding-right: 3rem;
+  color: #fff;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*-- Other styles --*/
+
 
 p {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 a{
@@ -554,13 +624,8 @@ h4 {
 }
 
 
-.link-text {
-  font-weight: bold;
-}
-
 .project-description {
   font-size: 2rem;
-  font-weight: 100;
 }
 
 .tumblr-link {
@@ -569,14 +634,8 @@ h4 {
 
 .primary-link{
   color: #8abf3b;
-  font-weight: bold;
 }
 
-
-.contact-text{
-  font-size: 6rem;
-
-}
 
 @media (max-width: 550px) {
 .contact-text {
@@ -596,6 +655,21 @@ h4 {
 }
 
 .footer {
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* -- SVG Styles --*/
+
+.bg-cacti {
+  max-width: 100%;  
+  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+.cacti  {
+  height: 100px;
+  position: absolute;
+  left: -180px;
+}
 }
