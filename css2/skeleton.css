@@ -125,7 +125,10 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  color: #222; }
+  color: #222;
+  overflow-x: hidden; 
+  overflow-y: auto; }
+  
 
 
 /* Typography
@@ -545,7 +548,7 @@ h1 {
 /*--Button style--!*/
 .button {
   background-color: #89bf40;
-  border: solid black;
+  border: none;
   color: #FFF;
   text-align: center;
   width: 250px;
@@ -663,13 +666,14 @@ h4 {
 
 .bg-cacti {
   max-width: 100%;  
-  overflow: hidden;
 }
 
 @media (max-width: 550px) {
 .cacti  {
   height: 100px;
+  width: 1920px;
   position: absolute;
-  left: -180px;
+  left: -960px;
+
 }
 }
