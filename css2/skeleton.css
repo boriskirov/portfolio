@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 9600px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -450,7 +450,7 @@ body {
 
 
 .header {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 span {
@@ -693,4 +693,31 @@ h4 {
   .button {
     width: 270px;
   }
+}
+
+
+/* --- Take me to top button --*/
+
+#myBtn {
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #89bf40;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 0;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+#myBtn:hover {
+  background-color: #d2d2d2;
 }
