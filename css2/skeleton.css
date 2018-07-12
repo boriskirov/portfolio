@@ -126,8 +126,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  overflow-x: hidden; 
-  overflow-y: auto; }
+   }
   
 
 
@@ -425,6 +424,11 @@ there.
 */
 
 
+html body {
+  overflow-x: hidden;
+}
+
+
 body {
   background: #f9f9f9;
 
@@ -505,38 +509,6 @@ h1 {
   font-weight: bold;
 }
 
-@media (max-width: 550px) {
-.header h1 {
-  font-size: 5.5rem;
-}
-}
-
-@media (max-width: 320px) {
-.header h1 {
-  font-size: 4.5rem;
-  margin-top: 15%;
-}
-}
-
-@media (max-width: 550px) {
-  .hvr-buzz {
-    font-size: 5.5rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .hvr-buzz {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 550px) {
-  h2 {
-    font-size: 2.5rem;
-
-  }
-}
-
 .project-container {
   margin-bottom: 5rem;
   padding-bottom: 5rem;
@@ -591,6 +563,7 @@ h1 {
 }
 
 
+
 /*-- Other styles --*/
 
 
@@ -640,17 +613,7 @@ h4 {
 }
 
 
-@media (max-width: 550px) {
-.contact-text {
-  font-size: 3.5rem;
-}
-}
 
-@media (max-width: 320px) {
-.contact-text  {
-  font-size: 1.5rem;
-}
-}
 
 .footer-links {
   color: #8abf3b;
@@ -668,6 +631,52 @@ h4 {
   max-width: 100%;  
 }
 
+/* -- Media Breakpoints --*/
+
+@media (max-width: 550px) {
+.header h1 {
+  font-size: 5.5rem;
+}
+}
+
+@media (max-width: 320px) {
+.header h1 {
+  font-size: 4.5rem;
+  margin-top: 15%;
+}
+}
+
+@media (max-width: 550px) {
+  .hvr-buzz {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hvr-buzz {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-size: 2.5rem;
+
+  }
+}
+
+@media (max-width: 550px) {
+.contact-text {
+  font-size: 3.5rem;
+}
+}
+
+@media (max-width: 320px) {
+.contact-text  {
+  font-size: 1.5rem;
+}
+}
+
 @media (max-width: 550px) {
 .cacti  {
   height: 100px;
@@ -676,4 +685,16 @@ h4 {
   left: -960px;
 
 }
+}
+
+@media (max-width: 550px) {
+  .button {
+    width: 340px;
+  }
+}
+
+@media (max-width: 320px) {
+  .button {
+    width: 270px;
+  }
 }
