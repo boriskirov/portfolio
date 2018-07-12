@@ -425,7 +425,7 @@ there.
 
 
 html body {
-  overflow-x: hidden;
+  
 }
 
 
@@ -448,9 +448,6 @@ body {
   animation: infinite-spinning .7s ease forwards;
 }
 
-.bg-cacti{
-
-}
 
 .header {
   margin-bottom: 10%;
@@ -678,11 +675,10 @@ h4 {
 }
 
 @media (max-width: 550px) {
-.cacti  {
+.bg-cacti  {
   height: 100px;
   width: 1920px;
   position: absolute;
-  left: -960px;
 
 }
 }
