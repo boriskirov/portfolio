@@ -609,7 +609,23 @@ h4 {
   color: #8abf3b;
 }
 
+.footer-link {
+  display: inline-block;
+}
 
+.footer-link:after {
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.footer-link:hover:after {
+  width: 100%;
+  background: black;
+}
 
 
 .footer-links {
@@ -693,31 +709,4 @@ h4 {
   .button {
     width: 270px;
   }
-}
-
-
-/* --- Take me to top button --*/
-
-#myBtn {
-
-  position: fixed;
-  bottom: 1rem;
-  right: 1.5rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #89bf40;
-  color: white;
-  cursor: pointer;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  line-height: 0;
-  font-weight: normal;
-  letter-spacing: 0;
-}
-
-#myBtn:hover {
-  background-color: #d2d2d2;
 }
